@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: china;
+  src: url(3856NeueMachina.woff2);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 60px;
+}
+
+/* Add hover effect for nav links */
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Add hover effect for nav buttons */
+nav button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: black; /* Change to black */
+  color: white; /* Change text color to white */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+nav h1 {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  text-align: center;
+  gap: 2px;
+}
+
+nav h1 i {
+  display: inline-block;
+  rotate: 45deg;
+  font-size: 34px;
+}
+
+.part2 {
+  display: flex;
+  gap: 35px;
+}
+
+.center {
+  display: flex;
+  height: 85%;
+  width: 100%;
+  padding: 60px;
+  margin-bottom: 50px;
+}
+
+.center__part1 {
+  height: 100%;
+  width: 40%;
+}
+
+.center__part1 h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  font-family: china;
+}
+.center__part1 p {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  /* font-family: china; */
+  width: 95%;
+}
+
+.center__part1 button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.center__part1 button:hover {
+  background-color: #333; /* Slightly lighter shade of black */
+  transform: scale(1.05); /* Minimal enlargement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.center__part2 {
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+
+.center__part2 img {
+  position: absolute;
+  height: 100%;
+  right: 10%;
+}
+
+.section1bottom {
+  margin-bottom: 80px;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-around; /* Align images with spacing */
+  align-items: center; /* Align images vertically */
+  gap: 50px; /* Space between images */
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.section1bottom img {
+  display: flex;
+  align-items: center;
+  width: 150px; /* Set the same width for all images */
+  height: 100px; /* Set the same height for all images */
+  object-fit: contain; /* Maintain aspect ratio, no cropping */
+  display: block; /* Remove extra spacing below images */
+  filter: grayscale(100%); /* Make images black and white */
+}
+
+/* Optional hover effect to bring back color */
+.section1bottom img:hover {
+  filter: grayscale(0%); /* Restore color on hover */
+}
+
+.section2 .services {
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.services h3 {
+  background-color: #b9ff66;
+  font-weight: 500;
+  padding: 0px 10px;
+  font-size: 40px;
+  border-radius: 4px;
+  font-family: china;
+}
+
+.services p {
+  font-size: 16px;
+  width: 60%;
+  font-weight: 500;
+}
+
+.container {
+  height: auto; /* Allow the container to adapt based on content */
+  width: 100%; /* Ensure it spans the full width */
+  padding: 60px;
+  display: flex;
+  justify-content: space-between; /* Ensure elements are evenly spaced */
+  gap: 20px; /* Add consistent spacing between items */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.elem {
+  display: flex;
+  flex: 1 1 calc(45% - 20px); /* Adjust width and spacing dynamically */
+  height: 300px;
+  border: 3px solid black;
+  border-radius: 40px;
+  box-shadow: 0 12px 0px black;
+  padding: 50px; /* Add inner spacing */
+
+  margin: 20px 0px;
+}
+
+.elem {
+  display: flex;
+  flex: 1 1 calc(45% - 20px); /* Adjust width and spacing dynamically */
+  height: 300px;
+  border: 3px solid black;
+  border-radius: 40px;
+  box-shadow: 0 12px 0px black;
+  padding: 50px; /* Add inner spacing */
+  margin: 20px 0px;
+}
+
+.elem-part1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.elem-part2 {
+  height: 100%;
+  width: 50%;
+}
+
+.elem-part2 img {
+  height: 100%;
+  width: 90%;
+}
+
+.elem-part1 h3 span {
+  font-size: 28px;
+  font-family: china;
+  font-weight: 500;
+  background-color: #b9ff66; /* Background color directly behind text */
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.elem-part1 h4 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  gap: 12px;
+}
+
+.elem-part1 h4 i {
+  padding: 8px;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 50%;
+  color: #b9ff66;
+}
+
+.black {
+  background-color: black;
+}
+
+.black h3 span {
+  background-color: white;
+}
+
+.black h4 {
+  color: white;
+}
+
+.black h4 i {
+  background-color: white;
+  color: black;
+}
+.section3 {
+  padding: 50px;
+  height: auto;
+  width: 100%;
+  padding: 60px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.container2 {
+  width: 50%;
+  padding: 50px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+}
+
+.container2 h3 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: china;
+  margin-bottom: 20px;
+}
+
+.container2 p {
+  font-size: 18px;
+  /* font-weight: 500; */
+  margin-bottom: 20px;
+}
+
+.containerpart2 {
+  width: 50%;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+}
+
+.container2 button {
+  font-family: china;
+  margin-top: 20px;
+  padding: 15px 35px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+
+.container2 button:hover {
+  background-color: #333; /* Slightly lighter shade of black */
+  transform: scale(1.05); /* Minimal enlargement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.casestudy {
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.casestudy h3 {
+  background-color: #b9ff66;
+  font-weight: 500;
+  padding: 0px 10px;
+  font-size: 40px;
+  border-radius: 4px;
+  font-family: china;
+}
+
+.casestudy p {
+  font-size: 18px;
+  width: 50%;
+  font-weight: 500;
+}
